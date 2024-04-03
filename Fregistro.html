@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="1.css"> <!-- Enlace al archivo CSS  -->
+    </head>
+    <body>
+<!-- creacion del formulario  -->
+<form id="registro-form"> 
+    <label for="nombre" class="required">Nombre:</label>
+    <input type="text" id="nombre">
+    <label for="apellido" class="required">Apellido:</label>
+    <input type="text" id="apellido">
+    <label for="correo" class="required">E-mail:</label>
+    <input type="text" id="correo">
+    <label for="sexo" class="required">Sexo:</label>
+    <select id="sexo">
+        <option value="" disabled selected>-Seleccionar sexo-</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+    </select>
+    <label for="clave" class="required">Clave:</label>
+    <input type="password" id="clave">
+    <label for="confirmar-clave" class="required">Confirme su clave:</label>
+    <input type="password" id="confirmar-clave" placeholder="Repite tu clave">
+    <label for="rut">RUT:</label>
+    <input type="text" id="rut" placeholder="11.111.111-k">
+    <label for="fecha-nacimiento" class="required">Fecha de Nacimiento:</label>
+    <select id="dia">
+        <option value="">Día</option>
+    </select>
+    <select id="mes">
+        <option value="">Mes</option>
+    </select>
+    <select id="anio">
+        <option value="">Año</option>
+    </select>
+    
+    <button type="submit">Crear tu cuenta</button>
+    <label>
+        <input type="checkbox" id="ofertas" name="ofertas">
+        ¿Deseas recibir ofertas por correo electrónico?
+    </label>
+</form>
+
+
+<script src="1.js"></script> <!-- hace llamado del archivo js -->
+
+</body>
+</html>
